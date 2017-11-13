@@ -24,7 +24,7 @@ function viewCart() {
   else {
     var a=Object.keys(cart);
     for(i=0;i<l;i++) {
-      console.log(`In you cart, you have ${a[i]} at ${cart[a[i]]}${l==1||i==l-1?'.':(i==l-2?' and ':',')}`);
+      console.log(`In your cart, you have ${a[i]} at ${cart[a[i]]}${l==1||i==l-1?'.':(i==l-2?' and ':', ')}`);
     }
   }
 }
