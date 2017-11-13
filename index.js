@@ -22,8 +22,8 @@ function viewCart() {
   if(l===0)
    console.log("Your shopping cart is empty.");
   else {
-    var item=Object.keys(getCart()[0]);
-    const cost = getCart()[0][item];
+    var item=Object.keys(cart[0]);
+    const cost = cart[0][item];
     if(l===1)
     console.log(`In you cart, you have ${item} at $${cost}.`);
 
@@ -31,7 +31,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var sum=0;
+  for(var i=0;i<cart.length;i++) {
+    var item=Object.keys(cart[i]);
+    sum=sum+cart[i][item];
+  }
 }
 
 function removeFromCart(item) {
