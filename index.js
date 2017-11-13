@@ -25,8 +25,8 @@ function viewCart() {
     var item=Object.keys(getCart()[0]);
     const cost = getCart()[0][item];
     if(l===1)
-    console.log("In you cart, you have ${item} at $${cost}.");
-  
+    console.log(`In you cart, you have ${item} at $${cost}.`);
+
   }
 }
 
