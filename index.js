@@ -36,6 +36,7 @@ function total() {
     var item=Object.keys(cart[i]);
     sum=sum+cart[i][item];
   }
+  return sum;
 }
 
 function removeFromCart(item) {
