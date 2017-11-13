@@ -35,9 +35,8 @@ function viewCart() {
     for(var i=0;i<cart.length;i++) {
       var item=Object.keys(cart[i]);
       var cost=cart[i][item];
-      s=s+` ${item} at $${cost}${(i!=cart.length-2)?',':', and')}`;
+      s=s+` ${item} at $${cost}${(i!=cart.length-2)?',':((i!=cart.length-1)?', and':'.')}`;
     }
-    s=s+'.';
     console.log(s);
   }
 }
