@@ -53,5 +53,10 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if(cardNumber===undefined)
+  if(i===cart.length)
+   console.log("That item is not in your cart.");
+  else {
+
+  }
 }
