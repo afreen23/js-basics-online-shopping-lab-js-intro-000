@@ -47,9 +47,9 @@ function removeFromCart(item) {
         return cart;
         break;
       }
-      if(i===cart.length)
-       console.log("That item is not in your cart.")
   }
+  if(i===cart.length)
+   console.log("That item is not in your cart.");
 }
 
 function placeOrder(cardNumber) {
