@@ -26,7 +26,8 @@ function viewCart() {
     console.log(`In your cart, you have ${item} at $${cart[0][item]}.`);
   }
   else if(l===2) {
-    console.log();
+    
+    console.log(`In your cart you have ${Object.keys(cart[0]) at $${}}`);
   }
 }
 
