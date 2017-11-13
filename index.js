@@ -40,7 +40,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+  for(var i=0;i<cart.length;i++) {
+    
+  }
 }
 
 function placeOrder(cardNumber) {
