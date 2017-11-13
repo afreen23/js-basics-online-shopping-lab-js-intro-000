@@ -31,11 +31,11 @@ function viewCart() {
     console.log(`In your cart, you have ${item1} at $${cart[0][item1]} and ${item2} at $${cart[1][item2]}.`);
   }
   else {
-    var s='In your cart, you have ';
+    var s='In your cart, you have';
     for(var i=0;i<cart.length;i++) {
       var item=Object.keys(cart[i]);
       var cost=cart[i][item];
-      s=s+`${item} at ${cost}${(i===cart.length-2)?', and':((i===cart.length-1)?'.':',')}`;
+      s=s+` ${item} at ${cost}${(i===cart.length-2)?', and':((i===cart.length-1)?'.':',')}`;
     }
     console.log(s);
   }
