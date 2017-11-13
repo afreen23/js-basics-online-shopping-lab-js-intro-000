@@ -37,6 +37,7 @@ function viewCart() {
       var cost=cart[i][item];
       s=s+`${item} at ${cost}${(i===cart.length-2)?', and':((i===cart.length-1)?'.':',')}`;
     }
+    console.log(s);
   }
 }
 
