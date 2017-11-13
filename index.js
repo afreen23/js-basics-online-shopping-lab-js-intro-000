@@ -22,9 +22,9 @@ function viewCart() {
   if(l===0)
    console.log("Your shopping cart is empty");
   else {
-    var a=Object.keys(cart);
     for(var i=0;i<l;i++) {
-      console.log(`In your cart, you have ${a[i]} at ${cart[a[i]]}${l==1||i==l-1?'.':(i==l-2?' and ':', ')}`);
+      var a=Object.keys(cart[i]);
+      console.log(`In your cart, you have ${a} at ${cart[a[i]]}${l==1||i==l-1?'.':(i==l-2?' and ':', ')}`);
     }
   }
 }
