@@ -31,13 +31,14 @@ function viewCart() {
     console.log(`In your cart, you have ${item1} at $${cart[0][item1]} and ${item2} at $${cart[1][item2]}.`);
   }
   else {
-    var s='In your cart, you have';
-    for(var i=0;i<cart.length;i++) {
-      var item=Object.keys(cart[i]);
-      var cost=cart[i][item];
-      s=s+` ${item} at $${cost}${(i!=cart.length-2)?',':((i!=cart.length-1)?', and':'.')}`;
-    }
-    console.log(s);
+    var l=cart.length;
+        var s='In your cart, you have';
+        for(var i=0;i<cart.length;i++) {
+          var item=Object.keys(cart[i]);
+          var cost=cart[i][item];
+          s=s+` ${item} at $${cost}${(i===l-1)?'.':((l===2&&i===0)?' and':((i!=(l-2))?', ':', and'))}`;
+        }
+        console.log(s);
   }
 }
 
