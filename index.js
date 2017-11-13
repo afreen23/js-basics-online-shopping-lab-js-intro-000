@@ -22,8 +22,10 @@ function viewCart() {
   if(l===0)
    console.log("Your shopping cart is empty");
   else {
-    
-  } 
+    for(i=0;i<l;i++) {
+      
+    }
+  }
 }
 
 function total() {
