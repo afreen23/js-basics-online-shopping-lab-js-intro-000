@@ -44,12 +44,12 @@ function removeFromCart(item) {
     if(Object.keys(cart[i]).hasOwnProperty(item))
       {
         cart.splice(i,1);
+        return cart;
         break;
       }
       if(i===cart.length)
        console.log("That item is not in your cart.")
   }
-  return cart;
 }
 
 function placeOrder(cardNumber) {
