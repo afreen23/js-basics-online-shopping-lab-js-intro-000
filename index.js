@@ -32,6 +32,8 @@ function viewCart() {
   }
   else {
     for(var i=0;i<cart.length;i++) {
+      var item=Object.keys(cart[i]);
+      var cost=cart[i][item];
       
     }
   }
