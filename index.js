@@ -36,7 +36,7 @@ function viewCart() {
         for(var i=0;i<cart.length;i++) {
           var item=Object.keys(cart[i]);
           var cost=cart[i][item];
-          s=s+` ${item} at $${cost}${(i===l-1)?'.':((l===2&&i===0)?' and':((i!=(l-2))?', ':', and'))}`;
+          s=s+` ${item} at $${cost}${(i===l-1)?'.':((l===2&&i===0)?' and':((i!=(l-2))?',':', and'))}`;
         }
         console.log(s);
   }
