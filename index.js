@@ -22,12 +22,11 @@ function viewCart() {
   if(l===0)
    console.log("Your shopping cart is empty.");
   else {
-    var s='In you cart, you have ';
-  for(var i=0;i<l;i++) {
-        var a=Object.keys(cart[i]);
-        s=s+`${a} at $${getCart()[i][a]}.`;
-      }
-   console.log(s);
+    var item=Object.keys(getCart()[0]);
+    const cost = getCart()[0][item];
+    if(l===1)
+    console.log("In you cart, you have ${item} at $${cost}.");
+  
   }
 }
 
